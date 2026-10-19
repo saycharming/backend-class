@@ -1,7 +1,0 @@
-<?php
-
-// Pintop training only: add the Route declaration below to the local copy of routes/api.php.
-\Illuminate\Support\Facades\Route::get('/classroom/12-deployment-health-checks-c', function (\Illuminate\Http\Request $request) {
-    $name = $request->query('name', 'Pintop student');
-    return response()->json(['lesson' => 'Deployment, Health Checks & Capstone Review', 'message' => "Hello, {$name}"]);
-});
